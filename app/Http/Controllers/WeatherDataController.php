@@ -6,7 +6,7 @@ use App\Services\CurlService;
 
 class WeatherDataController extends Controller {
 
-    public function search() {
+    public function index(){
         $curlService = new CurlService();
         $reponse = $curlService->get('https://wttr.in/');
     }
