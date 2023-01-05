@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('wttr.index');
 });
 
-Route::get('/recherche', [WeatherDataController::class, 'index'])->name('weather-data.search');
+Route::get('/recherche', [WeatherDataController::class, 'search'])->name('weather-data.search');
