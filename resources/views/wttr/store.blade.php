@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="storage/css/app.css" />
+    <link rel="stylesheet" href="storage/css/app.css"/>
     <title>
         Site Api Weather
     </title>
@@ -19,18 +19,21 @@
         <td>Humidité</td>
     </tr>
     <tr>
-        <td>Lens</td>
-        <td>14°C</td>
-        <td>15</td>
-        <td>70%</td>
+        <td>{{ $donnees["city"] }}</td>
+        <td>{{ $donnees["temperature"] }}°C</td>
+        <td>{{ $donnees["pression"] }} Pa</td>
+        <td>{{ $donnees["humidite"] }}%</td>
     </tr>
-
 </table>
 
+<p>Vous pouvez de nouveau faire une requête</p>
+<a href="{{route("index")}}">
+    <button>Retour</button>
+</a>
 
 <footer>
-    <p>Aymeric Jakobowski 2B<br>
-        Quentin Lagadec 2B</p>
+    <p>Aymeric Jakobowski 2B</p>
+    <p>Quentin Lagadec 2B</p>
 </footer>
 
 </body>
