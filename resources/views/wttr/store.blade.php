@@ -1,9 +1,11 @@
+<html>
 <head>
     <link rel="stylesheet" href="storage/css/app.css"/>
     <title>
         Site Api Weather
     </title>
 </head>
+
 <body>
 <header>
     <nav>
@@ -11,14 +13,12 @@
     </nav>
 </header>
 
-<p>{{$message}}</p>
-
 <table>
     <tr>
-        <td>Nom de la ville</td>
-        <td>Température</td>
-        <td>Pression</td>
-        <td>Humidité</td>
+        <th>Nom de la ville</th>
+        <th>Température</th>
+        <th>Pression</th>
+        <th>Humidité</th>
     </tr>
     <tr>
         <td>{{ $donnees["city"] }}</td>
@@ -28,14 +28,18 @@
     </tr>
 </table>
 
-<p>Vous pouvez de nouveau faire une requête</p>
-<a href="{{route("index")}}">
-    <button>Retour</button>
-</a>
+<div style="margin-top: 5rem; text-align: center">
+    <p>{{$message}}</p>
+
+    Vous pouvez de nouveau faire une requête :
+    <a href="{{route("index")}}">
+        <button>Retour</button>
+    </a>
+</div>
 
 <footer>
-    <p>Aymeric Jakobowski 2B</p>
-    <p>Quentin Lagadec 2B</p>
+    <p>JAKOBOWSKI Aymeric 2B</p>
+    <p>LAGADEC Quentin 2B</p>
 </footer>
 
 </body>
