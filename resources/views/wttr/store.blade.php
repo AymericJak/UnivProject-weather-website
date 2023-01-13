@@ -11,6 +11,8 @@
     </nav>
 </header>
 
+<p>{{$message}}</p>
+
 <table>
     <tr>
         <td>Nom de la ville</td>
