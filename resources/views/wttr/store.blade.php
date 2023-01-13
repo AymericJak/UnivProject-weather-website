@@ -1,9 +1,11 @@
+<html>
 <head>
-    <link rel="stylesheet" href="storage/css/app.css" />
+    <link rel="stylesheet" href="storage/css/app.css"/>
     <title>
         Site Api Weather
     </title>
 </head>
+
 <body>
 <header>
     <nav>
@@ -13,24 +15,31 @@
 
 <table>
     <tr>
-        <td>Nom de la ville</td>
-        <td>Température</td>
-        <td>Pression</td>
-        <td>Humidité</td>
+        <th>Nom de la ville</th>
+        <th>Température</th>
+        <th>Pression</th>
+        <th>Humidité</th>
     </tr>
     <tr>
-        <td>Lens</td>
-        <td>14°C</td>
-        <td>15</td>
-        <td>70%</td>
+        <td>{{ $donnees["city"] }}</td>
+        <td>{{ $donnees["temperature"] }}°C</td>
+        <td>{{ $donnees["pression"] }} Pa</td>
+        <td>{{ $donnees["humidite"] }}%</td>
     </tr>
-
 </table>
 
+<div style="margin-top: 5rem; text-align: center">
+    <p>{{$message}}</p>
+
+    Vous pouvez de nouveau faire une requête :
+    <a href="{{route("index")}}">
+        <button>Retour</button>
+    </a>
+</div>
 
 <footer>
-    <p>Aymeric Jakobowski 2B<br>
-        Quentin Lagadec 2B</p>
+    <p>JAKOBOWSKI Aymeric 2B</p>
+    <p>LAGADEC Quentin 2B</p>
 </footer>
 
 </body>
