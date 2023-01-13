@@ -55,7 +55,7 @@ class WeatherDataController extends Controller {
             if (empty($donnees))
                 $message .= "Aucune données de cette ville dans la base de données";
             else
-                $message .= "Ces données sont les dernières présente dans la base de données.";
+                $message .= " Ces données sont les dernières présente dans la base de données.";
         }
 
         return view('wttr.store', ['donnees' => $donnees, 'message' => $message]);

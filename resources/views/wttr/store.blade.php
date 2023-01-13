@@ -27,9 +27,11 @@
         <td>{{ $donnees["humidite"] }}%</td>
     </tr>
 </table>
-
 <div style="margin-top: 5rem; text-align: center">
     <p>{{$message}}</p>
+    @if(array_key_exists("updated_at", $donnees))
+        <p>Date des données : {{ $donnees["updated_at"] }}</p>
+    @endif
 
     Vous pouvez de nouveau faire une requête :
     <a href="{{route("index")}}">
